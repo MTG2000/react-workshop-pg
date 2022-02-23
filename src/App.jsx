@@ -1,32 +1,41 @@
+import { useState } from "react";
 import "./App.css";
 
-var counter = 0;
-
 function App() {
-  function handleReset() {
-    alert("Reset CLICKED");
-  }
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  function handleDecrement() {
-    alert("Decrement CLICKED");
-  }
-
-  function handleIncrement() {
-    counter += 1;
-    console.log(counter);
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`
+    Email: ${email}
+    Password: ${password}
+    `);
+  };
 
   return (
     <>
       <div className="background"></div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h3>Login Here</h3>
 
         <label htmlFor="email">Email</label>
-        <input type="email" placeholder="email@gmail.com" id="email" />
+        <input
+          type="email"
+          placeholder="email@gmail.com"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
         <label htmlFor="password">Password</label>
-        <input type="password" placeholder="Password" id="password" />
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
         <button>Log In</button>
       </form>
