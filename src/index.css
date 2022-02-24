@@ -83,8 +83,13 @@ input {
   font-size: 14px;
   font-weight: 300;
 }
+
+:is(button, input):focus {
+  outline: solid #00bcd4 4px;
+}
+
 ::placeholder {
-  color: #e5e5e5;
+  color: #b8b8b8;
 }
 button {
   margin-top: 50px;

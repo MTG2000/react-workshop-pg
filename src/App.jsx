@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 
 function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const emailRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,6 +12,9 @@ function App() {
     Email: ${email}
     Password: ${password}
     `);
+    setEmail("");
+    setPassword("");
+    emailRef.current.focus();
   };
 
   return (
@@ -21,6 +25,7 @@ function App() {
 
         <label htmlFor="email">Email</label>
         <input
+          ref={emailRef}
           type="email"
           placeholder="email@gmail.com"
           id="email"
