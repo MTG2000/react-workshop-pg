@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { TodosContext } from "./TodosContext";
 
-export default function TodoFilters({ filter, handleChangeFilter }) {
+export default function TodoFilters() {
+  const { filter, handleChangeFilter } = useContext(TodosContext);
+
   return (
     <div className="filters">
       <button

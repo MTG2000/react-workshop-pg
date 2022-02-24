@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { TodosContext } from "./TodosContext";
 
-export default function AddTodo({ handleAddTodo }) {
+export default function AddTodo() {
+  const { handleAddTodo } = useContext(TodosContext);
+
   const [input, setInput] = useState("");
 
   const handleInputChange = (e) => setInput(e.target.value);
