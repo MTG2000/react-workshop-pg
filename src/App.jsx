@@ -1,50 +1,66 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "./App.css";
+import AddTodo from "./components/AddTodo";
+import TodoFilters from "./components/TodoFilters";
+import TodoList from "./components/TodoList";
+
+let idCntr = 4;
+
+const initialData = [
+  { id: 1, text: "Do The Dishes", isCompleted: false },
+  { id: 2, text: "Take out the trash", isCompleted: true },
+  { id: 3, text: "Watch AOT", isCompleted: false },
+];
 
 function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const emailRef = useRef();
+  const [filter, setFilter] = useState(0);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`
-    Email: ${email}
-    Password: ${password}
-    `);
-    setEmail("");
-    setPassword("");
-    emailRef.current.focus();
+  const [todos, setTodos] = useState(initialData);
+
+  const handleAddTodo = (newTodo) => {
+    setTodos([
+      ...todos,
+      {
+        id: idCntr++,
+        text: newTodo,
+        isCompleted: false,
+      },
+    ]);
   };
 
+  const handleChangeFilter = (value) => {
+    setFilter(value);
+  };
+
+  const handleToggleTodo = (id) => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            isCompleted: !todo.isCompleted,
+          };
+        } else return todo;
+      })
+    );
+  };
+
+  const filteredTodos = todos.filter((todo) => {
+    return (
+      filter === 0 ||
+      (filter === 1 && todo.isCompleted) ||
+      (filter === 2 && !todo.isCompleted)
+    );
+  });
+
   return (
-    <>
-      <div className="background"></div>
-      <form onSubmit={handleSubmit}>
-        <h3>Login Here</h3>
-
-        <label htmlFor="email">Email</label>
-        <input
-          ref={emailRef}
-          type="email"
-          placeholder="email@gmail.com"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-
-        <button>Log In</button>
-      </form>
-    </>
+    <div className="container">
+      <div className="card">
+        <TodoFilters filter={filter} handleChangeFilter={handleChangeFilter} />
+        <TodoList todos={filteredTodos} handleToggleTodo={handleToggleTodo} />
+        <AddTodo handleAddTodo={handleAddTodo} />
+      </div>
+    </div>
   );
 }
 
