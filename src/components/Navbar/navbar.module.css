@@ -1,0 +1,28 @@
+.nav {
+  background-color: #222;
+  color: white;
+  padding: 18px 48px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav ul {
+  width: max-content;
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

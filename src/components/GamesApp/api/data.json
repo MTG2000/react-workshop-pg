@@ -1,0 +1,375 @@
+[
+    {
+        "id": 1,
+        "title": "danganronpa",
+        "tags": [
+            "story",
+            "anime",
+            "music"
+        ],
+        "img": "images/thumbs/danganronpa-mini.jpg"
+    },
+    {
+        "id": 3,
+        "title": "killing floor 2",
+        "tags": [
+            "fps",
+            "violent",
+            "multiplayer",
+            "fast-paced"
+        ],
+        "img": "images/thumbs/killing-floor-2-mini.jpg"
+    },
+    {
+        "id": 4,
+        "title": "red dead redemption 2",
+        "tags": [
+            "story",
+            "music",
+            "atmosphere"
+        ],
+        "img": "images/thumbs/red-dead-redemption-2-mini.jpg"
+    },
+    {
+        "id": 5,
+        "title": "doom",
+        "tags": [
+            "violent",
+            "music",
+            "fast-paced"
+        ],
+        "img": "images/thumbs/doom-mini.jpg"
+    },
+    {
+        "id": 6,
+        "title": "final fantasy",
+        "tags": [
+            "story",
+            "rpg",
+            "fantasy"
+        ],
+        "img": "images/thumbs/final-fantasy-mini.jpg"
+    },
+    {
+        "id": 7,
+        "title": "hotline miami 2",
+        "tags": [
+            "atmosphere",
+            "music",
+            "violent",
+            "fast-paced",
+            "dark",
+            "indie"
+        ],
+        "img": "images/thumbs/hotline-miami-2-mini.jpg"
+    },
+    {
+        "id": 8,
+        "title": "outlast 2",
+        "tags": [
+            "dark",
+            "atmosphere"
+        ],
+        "img": "images/thumbs/outlast-2-mini.jpg"
+    },
+    {
+        "id": 9,
+        "title": "resident evil 2",
+        "tags": [
+            "atmosphere",
+            "story",
+            "puzzles"
+        ],
+        "img": "images/thumbs/resident-evil-2-mini.jpg"
+    },
+    {
+        "id": 10,
+        "title": "the witcher 3",
+        "tags": [
+            "story",
+            "music",
+            "rpg",
+            "fantasy"
+        ],
+        "img": "images/thumbs/the-witcher-3-mini.jpg"
+    },
+    {
+        "id": 11,
+        "title": "soma",
+        "tags": [
+            "atmosphere",
+            "story",
+            "dark",
+            "puzzles"
+        ],
+        "img": "images/thumbs/soma-mini.jpg"
+    },
+    {
+        "id": 12,
+        "title": "wolfenstien",
+        "tags": [
+            "fps",
+            "music",
+            "fast-paced"
+        ],
+        "img": "images/thumbs/wolfenstien-mini.jpg"
+    },
+    {
+        "id": 13,
+        "title": "alan-wake",
+        "tags": [
+            "dark",
+            "story",
+            "atmosphere"
+        ],
+        "img": "images/thumbs/alan-wake-min.jpg"
+    },
+    {
+        "id": 14,
+        "title": "alien-isolation",
+        "tags": [
+            "puzzles",
+            "atmosphere",
+            "dark"
+        ],
+        "img": "images/thumbs/alien-isolation-min.jpg"
+    },
+    {
+        "id": 15,
+        "title": "amnesia",
+        "tags": [
+            "dark",
+            "atmosphere",
+            "indie",
+            "puzzles"
+        ],
+        "img": "images/thumbs/amnesia-min.jpg"
+    },
+    {
+        "id": 16,
+        "title": "batman",
+        "tags": [
+            "rpg",
+            "story",
+            "beat-em-up"
+        ],
+        "img": "images/thumbs/batman-min.jpg"
+    },
+    {
+        "id": 17,
+        "title": "deus-ex",
+        "tags": [
+            "rpg",
+            "music",
+            "story",
+            "violent"
+        ],
+        "img": "images/thumbs/deus-ex-min.jpg"
+    },
+    {
+        "id": 18,
+        "title": "devil-may-cry",
+        "tags": [
+            "fantasy",
+            "fast-paced",
+            "music",
+            "beat-em-up",
+            "rpg"
+        ],
+        "img": "images/thumbs/devil-may-cry-min.jpg"
+    },
+    {
+        "id": 19,
+        "title": "far-cry",
+        "tags": [
+            "rpg",
+            "violent",
+            "fps"
+        ],
+        "img": "images/thumbs/far-cry-min.jpg"
+    },
+    {
+        "id": 20,
+        "title": "FEAR",
+        "tags": [
+            "dark",
+            "fps",
+            "fast-paced",
+            "violent",
+            "music"
+        ],
+        "img": "images/thumbs/fear-min.jpg"
+    },
+    {
+        "id": 21,
+        "title": "god-of-war",
+        "tags": [
+            "rpg",
+            "beat-em-up",
+            "fantasy",
+            "music"
+        ],
+        "img": "images/thumbs/god-of-war-min.jpg"
+    },
+    {
+        "id": 22,
+        "title": "gta-v",
+        "tags": [
+            "rpg",
+            "multiplayer",
+            "violent"
+        ],
+        "img": "images/thumbs/gta-v-min.jpeg"
+    },
+    {
+        "id": 23,
+        "title": "inside",
+        "tags": [
+            "dark",
+            "atmosphere",
+            "indie",
+            "story"
+        ],
+        "img": "images/thumbs/inside-min.jpg"
+    },
+    {
+        "id": 24,
+        "title": "life-is-strange",
+        "tags": [
+            "story",
+            "music"
+        ],
+        "img": "images/thumbs/life-is-strange-min.jpg"
+    },
+    {
+        "id": 25,
+        "title": "limbo",
+        "tags": [
+            "dark",
+            "atmosphere",
+            "indie"
+        ],
+        "img": "images/thumbs/limbo-min.jpg"
+    },
+    {
+        "id": 26,
+        "title": "little-nightmares",
+        "tags": [
+            "dark",
+            "atmosphere",
+            "indie",
+            "story"
+        ],
+        "img": "images/thumbs/little-nightmares-min.jpg"
+    },
+    {
+        "id": 27,
+        "title": "nier-automata",
+        "tags": [
+            "story",
+            "music",
+            "beat-em-up",
+            "fast-paced",
+            "rpg"
+        ],
+        "img": "images/thumbs/nier-automata-min.jpeg"
+    },
+    {
+        "id": 28,
+        "title": "observer",
+        "tags": [
+            "dark",
+            "atmosphere",
+            "story"
+        ],
+        "img": "images/thumbs/observer-min.jpg"
+    },
+    {
+        "id": 29,
+        "title": "ori",
+        "tags": [
+            "music",
+            "fast-paced",
+            "atmosphere",
+            "indie"
+        ],
+        "img": "images/thumbs/ori-min.jpg"
+    },
+    {
+        "id": 30,
+        "title": "portal",
+        "tags": [
+            "fps",
+            "story",
+            "atmosphere"
+        ],
+        "img": "images/thumbs/portal-min.jpg"
+    },
+    {
+        "id": 31,
+        "title": "silent-hill",
+        "tags": [
+            "atmosphere",
+            "dark",
+            "story",
+            "music"
+        ],
+        "img": "images/thumbs/silent-hill-min.jpg"
+    },
+    {
+        "id": 32,
+        "title": "the-cat-lady",
+        "tags": [
+            "dark",
+            "story",
+            "atmosphere",
+            "indie",
+            "music"
+        ],
+        "img": "images/thumbs/the-cat-lady-min.jpg"
+    },
+    {
+        "id": 33,
+        "title": "the-room",
+        "tags": [
+            "atmosphere",
+            "indie"
+        ],
+        "img": "images/thumbs/the-room-min.jpg"
+    },
+    {
+        "id": 34,
+        "title": "the-talos-principle",
+        "tags": [
+            "atmosphere",
+            "music",
+            "story"
+        ],
+        "img": "images/thumbs/the-talos-principle-min.jpg"
+    },
+    {
+        "id": 35,
+        "title": "the-wolf-among-us",
+        "tags": [],
+        "img": "images/thumbs/the-wolf-among-us-min.jpg"
+    },
+    {
+        "id": 36,
+        "title": "tomb-raider",
+        "tags": [
+            "atmosphere",
+            "puzzles"
+        ],
+        "img": "images/thumbs/tomb-raider-min.jpg"
+    },
+    {
+        "id": 37,
+        "title": "until-dawn",
+        "tags": [
+            "story",
+            "dark",
+            "atmosphere"
+        ],
+        "img": "images/thumbs/until-dawn-min.jpg"
+    }
+]

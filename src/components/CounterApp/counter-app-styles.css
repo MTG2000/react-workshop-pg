@@ -1,0 +1,57 @@
+.counter-app {
+  background-color: rgb(238, 238, 238);
+}
+
+.counter-app .container {
+  min-height: 100vh;
+  display: flex;
+  gap: 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-app .container .value {
+  font-size: 120px;
+  font-family: monospace;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #888;
+  box-shadow: 2px 4px 10px #ddd;
+}
+
+.counter-app .btns {
+  display: flex;
+  gap: 12px;
+}
+
+.counter-app .btns button:first-of-type {
+  margin-right: 24px;
+}
+
+.counter-app button {
+  background-color: #010a39;
+  padding: 12px 24px;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  box-shadow: -5px 3px 0px 1px #020202;
+  transition: all 0.3s;
+}
+
+.counter-app button:hover {
+  background-color: #051046;
+  transform: scale(1.03);
+}
+
+.counter-app button:active {
+  transform: scale(0.9);
+}

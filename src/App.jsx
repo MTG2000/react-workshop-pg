@@ -1,21 +1,26 @@
-import { useState } from "react";
 import "./App.css";
-import AddTodo from "./components/AddTodo";
-import TodoFilters from "./components/TodoFilters";
-import TodoList from "./components/TodoList";
-import TodosContextProvider from "./components/TodosContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GamesApp from "./components/GamesApp/GamesApp";
+import TodosApp from "./components/TodosApp/TodosApp";
+import Navbar from "./components/Navbar/Navbar";
+import LoginApp from "./components/LoginApp/LoginApp";
+import CounterApp from "./components/CounterApp/CounterApp";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
-    <TodosContextProvider>
-      <div className="container">
-        <div className="card">
-          <TodoFilters />
-          <TodoList />
-          <AddTodo />
-        </div>
-      </div>
-    </TodosContextProvider>
+    <>
+      <BrowserRouter basename="/react-workshop-pg">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/games" element={<GamesApp />} />
+          <Route path="/todos" element={<TodosApp />} />
+          <Route path="/login" element={<LoginApp />} />
+          <Route path="/counter" element={<CounterApp />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

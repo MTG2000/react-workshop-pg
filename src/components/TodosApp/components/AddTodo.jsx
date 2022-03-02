@@ -2,29 +2,29 @@ import React, { useContext, useState } from "react";
 import { TodosContext } from "./TodosContext";
 
 export default function AddTodo() {
-  const { handleAddTodo } = useContext(TodosContext);
-
   const [input, setInput] = useState("");
+  const { handleAddTodo } = useContext(TodosContext);
 
   const handleInputChange = (e) => setInput(e.target.value);
 
-  const handleAdd = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (input.length > 0) {
+      // Add the todo to the todos list
       handleAddTodo(input);
       setInput("");
     }
   };
 
   return (
-    <form onSubmit={handleAdd} className="add-todo">
+    <form onSubmit={handleSubmit} className="add-todo">
       <input
         type="text"
         placeholder="New Todo"
         value={input}
         onChange={handleInputChange}
       />
-      <button onClick={handleAdd}>Add</button>
+      <button onClick={handleSubmit}>Add</button>
     </form>
   );
 }

@@ -1,0 +1,127 @@
+.todos-app .wrapper {
+  padding: 64px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 2px 4px 10px #373535b0;
+}
+
+.todos-app .container {
+  background: linear-gradient(149deg, #222a55, #77f3f2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todos-app .card {
+  flex-basis: 90%;
+  max-width: 600px;
+  padding: 36px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.todos-app input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.todos-app form :is(button, input):focus {
+  outline: solid #00bcd4 4px;
+}
+
+.todos-app ::placeholder {
+  color: #b8b8b8;
+}
+
+.todos-app .add-todo {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 140px;
+}
+
+.todos-app .add-todo input {
+  background-color: white;
+}
+
+.todos-app .add-todo button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todos-app .todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.todos-app .todo-card {
+  background-color: whitesmoke;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todos-app .todo-card p {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.todos-app .todo-card .remove {
+  background-color: transparent;
+  color: #f44336;
+  border: 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.todos-app .todo-card:hover .remove {
+  opacity: 1;
+}
+
+.todos-app .todo-card.completed {
+  background-color: rgb(221, 221, 221);
+}
+
+.todos-app .todo-card.completed p {
+  text-decoration: line-through;
+}
+
+.todos-app .filters {
+  display: flex;
+  gap: 16px;
+}
+
+.todos-app .filters button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.212);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.todos-app .filters button.active {
+  background-color: #ffffff75;
+}
