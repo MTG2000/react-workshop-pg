@@ -10,7 +10,7 @@ import HomePage from "./components/HomePage/HomePage";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/react-workshop-pg">
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
